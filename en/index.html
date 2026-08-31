@@ -2,138 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="CharaBen support and privacy policy">
-  <title>CharaBen | Support and Privacy Policy</title>
-  <style>
-    :root {
-      color-scheme: light;
-      --ink: #eff4ff;
-      --muted: #aebdd6;
-      --canvas: #090c1e;
-      --card: #111a34;
-      --blue: #48e2ff;
-      --line: #2b3b63;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      color: var(--ink);
-      background:
-        radial-gradient(circle at 92% -10%, rgb(83 72 255 / 38%) 0, transparent 32rem),
-        radial-gradient(circle at -10% 44%, rgb(0 215 255 / 18%) 0, transparent 28rem),
-        var(--canvas);
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-      line-height: 1.8;
-    }
-
-    main { max-width: 760px; margin: 0 auto; padding: 56px 20px 80px; }
-    header { padding: 28px 0 36px; }
-    .language { display: flex; justify-content: flex-end; gap: 10px; margin: 0 0 18px; font-size: 0.88rem; }
-    .language a[aria-current="page"] { color: var(--ink); font-weight: 700; text-decoration: none; }
-    .eyebrow { margin: 0 0 8px; color: var(--blue); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.08em; }
-    h1, h2 { line-height: 1.35; }
-    h1 { margin: 0; font-size: clamp(2rem, 8vw, 3.5rem); letter-spacing: -0.06em; }
-    h2 { margin: 2.6rem 0 0.8rem; font-size: 1.25rem; }
-    p, li { font-size: 0.98rem; }
-    .lead { margin: 16px 0 0; color: var(--muted); font-size: 1.05rem; }
-    .card {
-      padding: 24px;
-      background: linear-gradient(145deg, rgb(26 39 74 / 94%), rgb(13 20 43 / 94%));
-      border: 1px solid var(--line);
-      border-radius: 20px;
-      box-shadow: 0 20px 58px rgb(0 0 0 / 28%), inset 0 1px 0 rgb(255 255 255 / 8%);
-    }
-    .contact { margin: 0; font-size: 1.08rem; font-weight: 700; }
-    a { color: var(--blue); overflow-wrap: anywhere; }
-    ul { padding-left: 1.25rem; }
-    .policy { margin-top: 48px; }
-    .updated { color: var(--muted); font-size: 0.9rem; }
-    footer { margin-top: 52px; color: var(--muted); font-size: 0.85rem; }
-
-    @media (max-width: 480px) {
-      main { padding-top: 34px; }
-      .card { padding: 20px; border-radius: 16px; }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="CharaBen is an iPhone study app where you can learn with your favorite character and your own question sets.">
+  <meta property="og:title" content="CharaBen | Your favorite character reacts as you learn.">
+  <meta property="og:description" content="Create a character with your favorite images, name, and lines—then study your own way.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://charaben-app.github.io/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>CharaBen | Your favorite character reacts as you learn.</title>
+  <link rel="icon" href="../assets/app-icon.png">
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-  <main>
-    <header>
-      <nav class="language" aria-label="Language selector">
-        <a href="../">日本語</a>
-        <a href="./" aria-current="page">English</a>
-      </nav>
-      <p class="eyebrow">CHARABEN SUPPORT</p>
-      <h1>CharaBen</h1>
-      <p class="lead">Support and Privacy Policy</p>
-    </header>
-
-    <section class="card" aria-labelledby="support-title">
-      <h2 id="support-title">Support</h2>
-      <p>Please contact us at the email address below for questions or to report an issue.</p>
-      <p class="contact"><a href="mailto:charaben.support@gmail.com">charaben.support@gmail.com</a></p>
-      <p>Including your device model, iOS version, app version, and a description of the issue will help us investigate more efficiently.</p>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header"><nav class="nav shell" aria-label="Main navigation">
+    <a class="brand" href="#top"><img src="../assets/app-icon.png" alt=""><span>CharaBen</span></a>
+    <div class="nav-links"><a href="#features">Features</a><a href="#screens">Screens</a><a href="#support">Support</a><button class="gaming-toggle" type="button" data-gaming-toggle data-label-off="GAMING MODE" data-label-on="GAMING MODE ON" data-announce-on="Gaming mode turned on" data-announce-off="Gaming mode turned off" aria-pressed="false"><span class="gaming-toggle-label">GAMING MODE</span></button><div class="lang" aria-label="Language selector"><a href="../" lang="ja">JA</a><a href="./" aria-current="page">EN</a></div></div>
+  </nav></header>
+  <main id="main">
+    <section class="hero shell" id="top">
+      <div><p class="eyebrow">Your character. Your study partner.</p><h1>Your favorite character reacts as you learn.<span>Let what you love lead you to one more question.</span></h1><p class="lead">CharaBen is an iPhone study app where you can learn with a character—or your “oshi”—created with your favorite images, name, and lines, using question sets all your own.</p><div class="actions"><a class="button" href="https://apps.apple.com/app/id6791627723">Download on the App Store</a><a class="button secondary" href="#screens">See the app</a></div><p class="availability">Made for iPhone · Free to start</p></div>
+      <div class="hero-visual"><div class="glow"></div><div class="phone"><img src="../assets/en/01-character-partner.png" alt="A CharaBen study screen where the character reacts to a correct answer"></div><img class="floating-icon" src="../assets/app-icon.png" alt="CharaBen app icon"></div>
     </section>
-
-    <section class="policy" aria-labelledby="privacy-title">
-      <p class="eyebrow">PRIVACY POLICY</p>
-      <h2 id="privacy-title">Privacy Policy</h2>
-      <p class="updated">Last updated: August 9, 2026</p>
-      <p>The provider of the CharaBen app (the “Developer”) handles user information as described below. This English version is provided for reference; the Japanese version is the original policy.</p>
-
-      <h2>1. Information Stored on Your Device</h2>
-      <p>CharaBen stores the following information locally on your device:</p>
-      <ul>
-        <li>Question sets, questions and answers, learning records, review status, and folder, archive, and pin settings</li>
-        <li>Character settings, character names, display images, expression images, and audio</li>
-        <li>Display preferences, notification settings, and onboarding completion status</li>
-        <li>Information needed to export and restore backups</li>
-      </ul>
-      <p>This information is used to provide learning, display, review, backup, and restore features. It is not collected by or sent to servers operated by the Developer. CharaBen does not require account registration or use its own analytics SDK.</p>
-      <p>When you export a backup, the backup file is created in the location you choose. If you choose external storage, such as iCloud Drive, the handling of that information is subject to the policies of that service.</p>
-
-      <h2>2. Advertising</h2>
-      <p>CharaBen displays banner advertising through the Google Mobile Ads SDK (AdMob), provided by Google LLC, to support operating costs.</p>
-      <p>Advertising providers may collect or use the following information to deliver ads, prevent fraud, measure ad impressions, and improve service quality:</p>
-      <ul>
-        <li>IP address and approximate location inferred from the IP address</li>
-        <li>Device or advertising SDK identifiers</li>
-        <li>Technical information, such as device, OS and app version, and language settings</li>
-        <li>Information about ad impressions, viewing, and interactions</li>
-        <li>Diagnostic and performance information, such as crash logs and app launch time</li>
-      </ul>
-      <p>At launch, CharaBen does not request App Tracking Transparency (ATT) permission and does not use IDFA-based tracking advertising to track users. However, the information above may be used for ad delivery and measurement depending on the advertising SDK and advertising provider settings.</p>
-      <p>For Google’s handling of information, please see the <a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a> and the <a href="https://developers.google.com/admob/ios/privacy/data-disclosure">Google Mobile Ads SDK App Store data disclosure</a>.</p>
-      <p>Where required by applicable law or regional requirements, the Developer provides consent collection and privacy choices for advertising.</p>
-      <p>CharaBen also offers an optional non-consumable in-app purchase that permanently removes ads. Apple processes purchases and restores. The Developer does not receive your payment card information, but the app receives the transaction and entitlement information required to provide the purchased feature.</p>
-
-      <h2>3. Notifications</h2>
-      <p>If you enable learning reminders, CharaBen uses local notifications on your device. Notification content and notification settings are not sent to the Developer’s servers.</p>
-
-      <h2>4. Photos, Audio, and Files</h2>
-      <p>Files you select as character images, expression images, or audio are stored on your device for character settings and display. These files are not sent to the Developer.</p>
-      <p>When you import question JSON or a backup file, the selected file is processed on your device to provide the relevant feature.</p>
-
-      <h2>5. External AI Services</h2>
-      <p>CharaBen can copy a prompt for creating question JSON with external AI services, such as ChatGPT. CharaBen does not directly connect to an external AI service. Whether to enter information into an external AI service is your choice, and information entered there is subject to that service’s policies.</p>
-
-      <h2>6. Disclosure to Third Parties</h2>
-      <p>Except for the advertising providers described in Section 2, the Developer does not provide your learning content, character settings, images, audio, or backup contents to third parties.</p>
-
-      <h2>7. Use by Minors</h2>
-      <p>Where parental consent is required by applicable law, CharaBen is intended to be used with the involvement of a parent or guardian. Because the app includes advertising, please review the App Store age rating and device content restrictions.</p>
-
-      <h2>8. Contact</h2>
-      <p>For questions about this policy or the handling of information, contact <a href="mailto:charaben.support@gmail.com">charaben.support@gmail.com</a>.</p>
-
-      <h2>9. Changes to This Policy</h2>
-      <p>The Developer may update this policy in response to changes in law, advertising SDK specifications, or CharaBen features. Material changes will be announced on this page or in the app.</p>
-    </section>
-
-    <footer>© 2026 CharaBen</footer>
+    <div class="proof-strip"><div class="proof-grid shell"><div class="proof"><i class="dot"></i><div><b>No account required</b><span>Start your own question set right away</span></div></div><div class="proof"><i class="dot"></i><div><b>Study data stays on device</b><span>Your questions and character settings are not sent to our servers</span></div></div><div class="proof"><i class="dot"></i><div><b>Quiz and flashcard modes</b><span>Choose the format that fits what you are learning</span></div></div></div></div>
+    <section id="features"><div class="shell"><div class="section-head"><p class="eyebrow">Why CharaBen</p><h2>Study with your favorite character.</h2><p>Your favorite character and vivid effects turn “I should study” into “just one question.”</p></div><div class="feature-grid">
+      <article class="feature"><span class="number">01 / REACTION</span><h3>Expressions and lines change with every answer</h3><p>Your character reacts to correct answers, mistakes, and winning streaks—adding a little feedback to every solo study session.</p></article>
+      <article class="feature"><span class="number">02 / YOUR CHARACTER</span><h3>Turn your favorite image into a study partner</h3><p>Customize images, expressions, a name, and lines to make the character yours. Or start immediately with a preset character.</p></article>
+      <article class="feature"><span class="number">03 / GAMING MODE</span><h3>Switch studying into gaming mode</h3><p>Set effects to “Flashy” and neon color lights up questions, choices, and results for a more immersive experience.</p><div class="mode-try"><button class="gaming-toggle" type="button" data-gaming-toggle data-label-off="Try it on this site" data-label-on="Return to normal mode" data-announce-on="Gaming mode turned on" data-announce-off="Gaming mode turned off" aria-pressed="false"><span class="gaming-toggle-label">Try it on this site</span></button></div></article>
+      <article class="feature"><span class="number">04 / FAST IMPORT</span><h3>Build question sets faster with AI</h3><p>Import questions made with ChatGPT or another service in one batch. CharaBen does not connect directly to an AI service.</p></article>
+      <article class="feature"><span class="number">05 / KEEP GOING</span><h3>Pick up where you left off</h3><p>Learning history and review progress stay on your device. Home Screen widgets keep your character close between sessions.</p></article>
+    </div></div></section>
+    <section class="showcase" id="screens"><div class="shell"><div class="section-head"><p class="eyebrow">Inside the app</p><h2>See what studying with your character looks like.</h2></div><div class="shots" aria-label="CharaBen app screenshots"><img src="../assets/en/01-character-partner.png" alt="Study with your favorite character" loading="lazy"><img src="../assets/en/02-character-reaction.png" alt="Character reaction after a correct answer" loading="lazy"><img src="../assets/en/03-gaming-mode.png" alt="Neon gaming mode" loading="lazy"><img src="../assets/en/04-your-own-decks.png" alt="Your own question sets" loading="lazy"><img src="../assets/en/05-character-motivation.png" alt="Character customization" loading="lazy"><img src="../assets/en/06-home-screen-widget.png" alt="CharaBen Home Screen widget" loading="lazy"></div><div class="actions"><a class="button" href="https://apps.apple.com/app/id6791627723">Start for free</a></div></div></section>
+    <section><div class="shell privacy-card"><div><p class="eyebrow">Private by design</p><h2>Your learning stays on your device.</h2><p class="lead">Question sets, learning history, character images, and audio are managed locally. There is no account registration or proprietary analytics SDK.</p></div><div class="privacy-points"><div class="privacy-point"><b>No study data sent to our servers</b><span>The Developer does not collect your questions, answers, or character settings on an operated server.</span></div><div class="privacy-point"><b>No direct connection to external AI</b><span>Copy a prompt and choose for yourself which external service to use.</span></div><div class="privacy-point"><b>You choose your backup location</b><span>Exported backups are created wherever you decide to save them.</span></div></div></div></section>
+    <section id="support"><div class="shell support-card"><p class="eyebrow">Support</p><h2>Need a hand? Get in touch.</h2><p>Questions and issue reports are welcome by email. Including your device model, iOS version, app version, and what happened will help us investigate.</p><div class="actions" style="justify-content:center"><a class="button" href="mailto:charaben.support@gmail.com">Contact support</a></div><p><a href="mailto:charaben.support@gmail.com">charaben.support@gmail.com</a></p></div></section>
+    <section class="policy" id="privacy"><div class="shell"><div class="section-head"><p class="eyebrow">Privacy policy</p><h2>Privacy Policy</h2><p>Last updated: August 9, 2026 · This translation is provided for reference; the Japanese version is the original policy.</p></div>
+      <details><summary>1. Information Stored on Your Device</summary><div class="content"><p>CharaBen stores question sets, questions and answers, learning records, review status, folder, archive and pin settings, character settings, names, images, expression images, audio, display and notification settings, onboarding status, and information needed for backup and restore locally on your device.</p><p>This information is used for learning, display, review, backup, and restore features. It is not collected by or sent to servers operated by the Developer. CharaBen does not require account registration or use its own analytics SDK. If you choose external storage for a backup, that service’s policy applies.</p></div></details>
+      <details><summary>2. Advertising and In-App Purchases</summary><div class="content"><p>CharaBen displays banner ads through Google LLC’s Google Mobile Ads SDK (AdMob) to support operating costs. Advertising providers may use IP address and approximate location, device or SDK identifiers, technical information, ad interaction information, and diagnostic and performance information for ad delivery, fraud prevention, measurement, and quality improvement.</p><p>At launch, CharaBen does not request App Tracking Transparency permission and does not track users for IDFA-based tracking advertising. See the <a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a> and <a href="https://developers.google.com/admob/ios/privacy/data-disclosure">Google Mobile Ads SDK data disclosure</a> for details.</p><p>An optional non-consumable in-app purchase permanently removes ads. Apple processes purchases and restores; the Developer does not receive payment card information.</p></div></details>
+      <details><summary>3. Notifications</summary><div class="content"><p>If you enable study reminders, CharaBen uses local notifications on your device. Notification content and settings are not sent to the Developer’s servers.</p></div></details>
+      <details><summary>4. Photos, Audio, and Files</summary><div class="content"><p>Files selected as character images, expression images, or audio are stored on your device and are not sent to the Developer. Imported question JSON and backup files are also processed on your device.</p></div></details>
+      <details><summary>5. External AI Services</summary><div class="content"><p>CharaBen can copy a prompt for creating question JSON with an external AI service such as ChatGPT, but it does not connect directly to an external AI service. Information entered there is subject to that service’s policy.</p></div></details>
+      <details><summary>6. Disclosure to Third Parties</summary><div class="content"><p>Except for the advertising provider handling described above, the Developer does not provide your learning content, character settings, images, audio, or backup contents to third parties.</p></div></details>
+      <details><summary>7. Use by Minors</summary><div class="content"><p>Where parental consent is required, CharaBen is intended to be used with the involvement of a parent or guardian in accordance with applicable law. Because the app includes advertising, please review the App Store age rating and device content restrictions.</p></div></details>
+      <details><summary>8. Contact and Changes</summary><div class="content"><p>Contact <a href="mailto:charaben.support@gmail.com">charaben.support@gmail.com</a> with policy questions. The Developer may update this policy in response to changes in law, advertising SDK specifications, or app features. Material changes will be announced on this page or in the app.</p></div></details>
+    </div></section>
   </main>
-</body>
-</html>
+  <footer><div class="shell footer-row"><span>© 2026 CharaBen</span><span>Your favorite character. One more question.</span></div></footer>
+  <script src="../app.js"></script>
+</body></html>

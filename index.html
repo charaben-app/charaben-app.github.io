@@ -14,7 +14,12 @@
     (() => {
       const params = new URLSearchParams(window.location.search);
       if (params.get('utm_medium') === 'business_card') {
-        window.location.replace('https://apps.apple.com/jp/app/id6791627723');
+        document.documentElement.classList.add('business-card-visit');
+        window.addEventListener('DOMContentLoaded', () => {
+          window.setTimeout(() => {
+            window.location.assign('https://apps.apple.com/app/apple-store/id6791627723?pt=129180515&ct=business_card_vol6&mt=8');
+          }, 1200);
+        });
       }
     })();
   </script>
@@ -22,6 +27,15 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <main class="business-card-redirect" aria-labelledby="business-card-title">
+    <div class="business-card-panel">
+      <img src="assets/app-icon.png" alt="キャラ勉" width="88" height="88">
+      <p class="eyebrow">CHARACTER × STUDY</p>
+      <h1 id="business-card-title">App Storeを開いています…</h1>
+      <p>自動で開かない場合は、下のボタンをタップしてください。</p>
+      <a class="button" href="https://apps.apple.com/app/apple-store/id6791627723?pt=129180515&amp;ct=business_card_vol6&amp;mt=8">App Storeで見る</a>
+    </div>
+  </main>
   <a class="skip" href="#main">本文へ移動</a>
   <header class="site-header">
     <nav class="nav shell" aria-label="メインナビゲーション">

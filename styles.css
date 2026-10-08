@@ -126,23 +126,25 @@ section { padding-block: 94px; }
 .feature p { margin: 0; color: var(--muted); }
 .more-features { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 22px; }
 .more-features span { padding: 8px 13px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); font-size: .82rem; }
-.infographic-feature, .dopa-card { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); align-items: center; gap: 36px; margin-top: 18px; padding: 30px 34px; border: 1px solid var(--line); border-radius: 24px; background: linear-gradient(135deg, rgba(114, 232, 244, .08), rgba(155, 140, 255, .08)); }
-.dopa-card { border-color: rgba(255, 79, 163, .35); background: linear-gradient(135deg, rgba(255, 79, 163, .14), rgba(255, 184, 77, .08)); }
-.dopa-card .eyebrow { color: #ff7cc0; }
-.dopa-card h3 { margin: 7px 0 0; font-size: clamp(1.3rem, 2.4vw, 1.8rem); }
-.dopa-card > p { margin: 0; color: var(--muted); line-height: 1.8; }
+.infographic-feature, .effects-card { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); align-items: center; gap: 36px; margin-top: 18px; padding: 30px 34px; border: 1px solid var(--line); border-radius: 24px; background: linear-gradient(135deg, rgba(114, 232, 244, .08), rgba(155, 140, 255, .08)); }
+.effects-card { border-color: rgba(255, 79, 163, .35); background: linear-gradient(135deg, rgba(255, 79, 163, .14), rgba(255, 184, 77, .08)); }
+.effects-card .eyebrow { color: #ff7cc0; }
+.effects-card h3 { margin: 7px 0 0; font-size: clamp(1.3rem, 2.4vw, 1.8rem); }
+.effects-card > p { margin: 0; color: var(--muted); line-height: 1.8; }
 .infographic-feature h3 { margin: 7px 0 0; font-size: clamp(1.3rem, 2.4vw, 1.8rem); }
 .infographic-feature > p { margin: 0; color: var(--muted); line-height: 1.8; }
 
-.look-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.look-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
 .look { padding: 26px 28px; border: 1px solid var(--line); border-radius: 22px; background: var(--surface); }
 .look h3 { margin: 0 0 10px; font-size: 1.3rem; }
 .look p { margin: 0; color: var(--muted); }
 .look-simple h3 { color: var(--ink); }
 .look-gaming { border-color: rgba(255, 79, 163, .45); box-shadow: inset 0 0 28px rgba(255, 79, 163, .12); }
 .look-gaming h3 { color: #ff6fbd; text-shadow: 0 0 14px rgba(255, 79, 163, .6); }
-.look-kira { border-color: rgba(230, 190, 255, .45); background: linear-gradient(135deg, rgba(255, 182, 220, .14), rgba(200, 180, 255, .12) 55%, rgba(170, 240, 215, .12)); }
-.look-kira h3 { color: #ffc4e6; }
+.look-pastel { border-color: rgba(230, 190, 255, .45); background: linear-gradient(135deg, rgba(255, 182, 220, .14), rgba(200, 180, 255, .12) 55%, rgba(170, 240, 215, .12)); }
+.look-pastel h3 { color: #ffc4e6; }
+.look-chill { border-color: rgba(150, 215, 245, .45); background: linear-gradient(135deg, rgba(140, 210, 245, .14), rgba(190, 230, 140, .12)); }
+.look-chill h3 { color: #a9e2f7; }
 .looks { border-bottom: 1px solid var(--line); }
 
 .showcase { overflow: hidden; }
@@ -166,6 +168,10 @@ section { padding-block: 94px; }
 footer { padding: 38px 0 60px; border-top: 1px solid var(--line); color: var(--muted); font-size: .82rem; }
 .footer-row { display: flex; justify-content: space-between; gap: 20px; }
 
+@media (max-width: 1040px) {
+  .look-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 800px) {
   .nav-links > a { display: none; }
   .nav-links { gap: 12px; }
@@ -176,7 +182,7 @@ footer { padding: 38px 0 60px; border-top: 1px solid var(--line); color: var(--m
   .hero .actions { justify-content: center; }
   .hero h1 { font-size: clamp(2.05rem, 9.2vw, 2.3rem); }
   .feature-grid, .look-grid { grid-template-columns: 1fr; }
-  .infographic-feature, .dopa-card { grid-template-columns: 1fr; gap: 12px; padding: 25px 22px; }
+  .infographic-feature, .effects-card { grid-template-columns: 1fr; gap: 12px; padding: 25px 22px; }
   .feature { min-height: auto; }
   .feature h3 { margin-top: 24px; }
   .shots { grid-template-columns: repeat(6, 74vw); overflow-x: auto; padding-bottom: 18px; scroll-snap-type: x mandatory; }

@@ -138,13 +138,14 @@ section { padding-block: 94px; }
 .look { padding: 26px 28px; border: 1px solid var(--line); border-radius: 22px; background: var(--surface); }
 .look h3 { margin: 0 0 10px; font-size: 1.3rem; }
 .look p { margin: 0; color: var(--muted); }
-.look-simple h3 { color: var(--ink); }
-.look-gaming { border-color: rgba(255, 79, 163, .45); box-shadow: inset 0 0 28px rgba(255, 79, 163, .12); }
-.look-gaming h3 { color: #ff6fbd; text-shadow: 0 0 14px rgba(255, 79, 163, .6); }
-.look-pastel { border-color: rgba(230, 190, 255, .45); background: linear-gradient(135deg, rgba(255, 182, 220, .14), rgba(200, 180, 255, .12) 55%, rgba(170, 240, 215, .12)); }
-.look-pastel h3 { color: #ffc4e6; }
-.look-chill { border-color: rgba(150, 215, 245, .45); background: linear-gradient(135deg, rgba(140, 210, 245, .14), rgba(190, 230, 140, .12)); }
-.look-chill h3 { color: #a9e2f7; }
+.look-palette { border-color: rgba(114, 232, 244, .4); background: linear-gradient(135deg, rgba(114, 232, 244, .12), rgba(255, 79, 163, .1)); }
+.look-palette h3 { color: #9eeef7; }
+.look-neon { border-color: rgba(255, 79, 163, .45); box-shadow: inset 0 0 28px rgba(255, 79, 163, .12); }
+.look-neon h3 { color: #ff6fbd; text-shadow: 0 0 14px rgba(255, 79, 163, .6); }
+.look-mode h3, .look-background h3 { color: var(--ink); }
+.effects-list { display: grid; gap: 14px; }
+.effects-list p { margin: 0; color: var(--muted); line-height: 1.8; }
+.effects-list strong { display: inline-block; min-width: 3.2em; margin-right: 10px; color: #ff7cc0; }
 .looks { border-bottom: 1px solid var(--line); }
 
 .showcase { overflow: hidden; }

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Macyを追加 | キャラ勉</title>
+<meta name="description" content="キャラ勉の公式キャラ「Macy」を無料で追加できます。">
+<style>
+  :root{--bg:#fff;--fg:#1d1d24;--muted:#6b6b78;--card:#f6f3fb;--pink:#ff3fa4;--cyan:#22d3ee}
+  @media (prefers-color-scheme: dark){:root{--bg:#121218;--fg:#f2f2f7;--muted:#a0a0ad;--card:#1e1c28}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif;line-height:1.7}
+  main{max-width:560px;margin:0 auto;padding:32px 16px 64px}
+  h1{font-size:28px;margin:0 0 4px;background:linear-gradient(90deg,var(--pink),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lead{color:var(--muted);margin:0 0 24px}
+  .hero{display:block;margin:0 auto 24px;max-height:320px;border-radius:24px;max-width:100%}
+  .btn{display:block;text-align:center;padding:16px;border-radius:16px;background:linear-gradient(90deg,var(--pink),#c03cff);color:#fff;font-weight:700;font-size:18px;text-decoration:none}
+  .note{font-size:13px;color:var(--muted);text-align:center;margin:8px 0 32px}
+  ol{background:var(--card);border-radius:16px;padding:20px 20px 20px 40px;margin:0 0 24px}
+  li+li{margin-top:8px}
+  footer{font-size:13px;color:var(--muted);text-align:center}
+  a.back{color:var(--pink)}
+  .choices{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:0 0 8px}
+  .choice{background:var(--card);border-radius:20px;padding:12px;display:flex;flex-direction:column;gap:10px}
+  .choice img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:14px}
+  .choice h3{margin:0;font-size:16px}
+  .choice p{margin:0;font-size:13px;color:var(--muted);flex:1}
+  .btn{font-size:15px;padding:12px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Macyを追加しよう</h1>
+  <p class="lead">キャラ勉の公式キャラ「Macy」を無料でダウンロードできます。正解すると一緒に喜んでくれる、元気なアイドル系の女の子です。</p>
+  <div class="choices">
+    <div class="choice">
+      <img src="macy-preview.jpg" alt="Macy(表情つき)">
+      <h3>Macy(表情つき)</h3>
+      <p>正解・不正解・考え中など5つの表情で反応します</p>
+      <a class="btn" href="Macy.json" download="Macy.json">ダウンロード</a>
+    </div>
+    <div class="choice">
+      <img src="macy-gif-preview.gif" alt="Macy(GIFアニメ版)">
+      <h3>Macy(GIFアニメ版)</h3>
+      <p>待機中に動くアニメ版です。表情は「表情つき」と同じ5つ</p>
+      <a class="btn" href="Macy-gif.json" download="Macy-gif.json">ダウンロード</a>
+    </div>
+    <div class="choice">
+      <img src="macy-promo-preview.jpg" alt="Macy(宣伝イラスト版)">
+      <h3>Macy(宣伝イラスト版)</h3>
+      <p>App Storeや公式サイトと同じウインクのMacyです</p>
+      <a class="btn" href="Macy-promo.json" download="Macy-promo.json">ダウンロード</a>
+    </div>
+  </div>
+  <p class="note">iPhoneのSafariで開いてください(1.4〜7MB)。好きなものを選べます</p>
+  <h2>追加のしかた</h2>
+  <ol>
+    <li>好きなMacyのボタンを押して「ダウンロード」を選びます</li>
+    <li>ダウンロードしたファイルを開き、共有ボタンから「キャラ勉」を選びます</li>
+    <li>「キャラとして読み込む」を押すと Macy が追加されます</li>
+  </ol>
+  <p>取り込んだ後は、キャラ設定のタブで Macy を選ぶと使えます。セリフや画像はあとから自由に編集できます。</p>
+  <footer><a class="back" href="../../">キャラ勉 公式サイトへ</a></footer>
+</main>
+</body>
+</html>
